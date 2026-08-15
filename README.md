@@ -82,3 +82,6 @@ Before real-world deployment, the system would require further mechanical, envir
 To make unattended borewells safer through a simple, affordable, and layered safety system.
 
 > Detect early. Alert immediately. Protect when it matters.
+## Hardware Connection
+
+![WellSentry Hardware Connection](assets/wiring_diagram.png)
