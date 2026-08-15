@@ -1,88 +1,84 @@
-# WellSentry 
+# WellSentry
 
-### Low-Cost Layered Safety System for Borewells and Hazardous Openings
+### Low-Cost Smart Safety System for Borewells
 
-WellSentry is a low-cost safety system designed to detect dangerous access or falls around unattended borewells.
+WellSentry is a low-cost safety system designed to monitor unattended or improperly secured borewells and provide an early warning when the borewell becomes unsafe.
 
-Instead of relying on a single warning mechanism, WellSentry uses multiple safety layers:
+## How It Works
 
-**Detect → Alert → Detect Again → Physically Protect**
+WellSentry uses multiple layers of protection:
 
----
+**1. Cap Tamper Detection**
+A vibration sensor detects movement or disturbance of the borewell cap.
 
-## Problem
+**2. Fall Detection**
+An ultrasonic sensor monitors the shaft and detects an object entering the monitored area.
 
-Open, abandoned, damaged, or poorly capped borewells can become dangerous fall hazards, especially for children and animals.
+**3. Local Alert**
+The ESP32 activates a buzzer and visual indicators when an abnormal event is detected.
 
-A normal physical cap can fail or be displaced without anyone knowing.
+**4. Remote Alert**
+The system can send notifications through Wi-Fi to a phone or monitoring system.
 
-WellSentry aims to provide active monitoring and a physical fallback safety layer.
+**5. Physical Protection**
+A safety mesh below the opening provides a passive fall-arrest layer that does not depend on electricity, internet, or human response.
 
----
-
-## Our Solution
-
-WellSentry combines:
-
-- Cap tamper detection
-- In-shaft fall detection
-- Local audible alarms
-- Phone notifications
-- Passive physical safety mesh
-- Low-cost off-the-shelf electronics
-
-The system is designed so that safety does not depend entirely on someone noticing an alert immediately.
-
----
-
-##  How It Works
-
-### Layer 1 — Cap Tamper Detection
-
-A sensor mounted on the borewell cap detects shaking, displacement, or disturbance.
-
-If the cap is disturbed:
-
-
-Cap disturbance
-       ↓
-Sensor detects movement
-       ↓
+## System Flow
+Cap / Shaft
+↓
+Sensors
+↓
 ESP32
-       ↓
-Local alarm + phone notification
+↓
+Detection
+↓
+Local + Remote Alert
+↓
+Physical Safety Mesh
 
-## if object enters 
+## Prototype Components
 
-Object enters shaft
-       ↓
-Shaft sensor detects change
-       ↓
-ESP32
-       ↓
-FALL DETECTED
-       ↓
-Louder alarm + phone notification
+- ESP32
+- SW-420 vibration sensor
+- HC-SR04 ultrasonic sensor
+- Buzzer
+- LEDs
+- Resistors
+- Safety mesh
+- Breadboard and jumper wires
 
+## What Makes WellSentry Different
 
-the safety net in it catches the object 
-hence even after the network or response fails the physical protection is provided 
+Instead of depending on a single sensor or notification, WellSentry combines detection, alerting, and physical protection.
 
-###Scalability
+**Detect → Alert → Protect**
+
+The physical safety layer remains useful even if an electronic alert is missed or connectivity is unavailable.
+
+## Scalability
 
 The current prototype is built for borewell safety, but the same basic technology can be adapted to other situations by changing the sensors, their placement, and the detection logic in the firmware.
 
-###Possible future applications include:
+Possible future applications include:
 
-Manholes
-Water tanks
-Construction openings
-Industrial pits
-Other restricted or hazardous openings
+- Manholes
+- Water tanks
+- Construction openings
+- Industrial pits
+- Other restricted or hazardous openings
+
 The core idea remains the same:
-Sense → Decide → Alert → Protect
 
-##Vision
+**Sense → Decide → Alert → Protect**
+
+## Prototype Status
+
+This project is currently a working prototype developed to demonstrate the concept.
+
+Before real-world deployment, the system would require further mechanical, environmental, sensor reliability, and safety testing.
+
+## Vision
 
 To make unattended borewells safer through a simple, affordable, and layered safety system.
-Detect early. Alert immediately. Protect when it matters.
+
+> Detect early. Alert immediately. Protect when it matters.
