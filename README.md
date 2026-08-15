@@ -78,9 +78,11 @@ the safety net in it catches the object
 hence even after the network or response fails the physical protection is provided 
 
 ##Scalability
+
 The current prototype is built for borewell safety, but the same basic technology can be adapted to other situations by changing the sensors, their placement, and the detection logic in the firmware.
 
 ##Possible future applications include:
+
 Manholes
 Water tanks
 Construction openings
@@ -90,5 +92,6 @@ The core idea remains the same:
 Sense → Decide → Alert → Protect
 
 ##Vision
+
 To make unattended borewells safer through a simple, affordable, and layered safety system.
 Detect early. Alert immediately. Protect when it matters.
