@@ -84,4 +84,4 @@ To make unattended borewells safer through a simple, affordable, and layered saf
 > Detect early. Alert immediately. Protect when it matters.
 ## Hardware Connection
 
-![WellSentry Hardware Connection](assets/wiring_diagram.png)
+![WellSentry Hardware Connection](wiring_diagram.png)
