@@ -88,3 +88,7 @@ Industrial pits
 Other restricted or hazardous openings
 The core idea remains the same:
 Sense → Decide → Alert → Protect
+
+Vision
+To make unattended borewells safer through a simple, affordable, and layered safety system.
+Detect early. Alert immediately. Protect when it matters.
