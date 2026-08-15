@@ -64,24 +64,15 @@ FALL DETECTED
        ↓
 Louder alarm + phone notification
 
-Object enters shaft
-       ↓
-Shaft sensor detects change
-       ↓
-ESP32
-       ↓
-FALL DETECTED
-       ↓
-Louder alarm + phone notification
 
 the safety net in it catches the object 
 hence even after the network or response fails the physical protection is provided 
 
-##Scalability
+###Scalability
 
 The current prototype is built for borewell safety, but the same basic technology can be adapted to other situations by changing the sensors, their placement, and the detection logic in the firmware.
 
-##Possible future applications include:
+###Possible future applications include:
 
 Manholes
 Water tanks
