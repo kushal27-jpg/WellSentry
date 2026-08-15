@@ -35,7 +35,7 @@ The system is designed so that safety does not depend entirely on someone notici
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 ### Layer 1 — Cap Tamper Detection
 
@@ -43,7 +43,7 @@ A sensor mounted on the borewell cap detects shaking, displacement, or disturban
 
 If the cap is disturbed:
 
-```text
+
 Cap disturbance
        ↓
 Sensor detects movement
@@ -75,6 +75,16 @@ FALL DETECTED
 Louder alarm + phone notification
 
 the safety net in it catches the object 
-hence evn after the network , response fails the 
-physically protection is provided 
+hence even after the network or response fails the physical protection is provided 
 
+Scalability
+The current prototype is built for borewell safety, but the same basic technology can be adapted to other situations by changing the sensors, their placement, and the detection logic in the firmware.
+
+Possible future applications include:
+Manholes
+Water tanks
+Construction openings
+Industrial pits
+Other restricted or hazardous openings
+The core idea remains the same:
+Sense → Decide → Alert → Protect
