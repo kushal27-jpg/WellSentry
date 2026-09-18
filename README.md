@@ -85,3 +85,8 @@ To make unattended borewells safer through a simple, affordable, and layered saf
 ## Hardware Connection
 
 ![WellSentry Hardware Connection](wiring_diagram.png)
+
+## Project Demonstration
+
+[Watch WellSentry Demo on Google Drive]
+(https://drive.google.com/file/d/1NRmdKGXpJy10yNQwuxsqUjzHNXSGFwr2/view?usp=drivesdk)
